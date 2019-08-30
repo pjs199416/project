@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<taglib>
+  <!-- 1.工具版本 -->
+  <tlib-version>1.0</tlib-version>
+  <!-- 2.JSP版本  -->
+  <jsp-version>1.2</jsp-version>
+  <!-- 3.前缀 -->
+  <short-name>j</short-name>
+  <uri>http://666666.com</uri>
+  <display-name>MyJTL Core</display-name>
+
+ 
+  <tag>
+  	<!-- 标签名字 -->
+    <name>dateFormat</name>
+    <!-- 标签运行的类  -->
+    <tag-class>com.project.util.DateTagSupport</tag-class>
+    <!-- 是围堵标记还是空标记   empty空标记   jsp 是成对标记-->
+    <body-content>empty</body-content>
+    <attribute>
+    	<!--  属性名  格式  -->
+        <name>pattern</name>
+        <!--  属性是否必须 -->
+        <required>false</required>
+        <!--  是否支持el表达式 -->
+        <rtexprvalue>false</rtexprvalue>
+    </attribute>
+     <attribute>
+    	<!--  属性名  格式  -->
+        <name>date</name>
+        <!--  属性是否必须 -->
+        <required>true</required>
+        <!--  是否支持el表达式 -->
+        <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  
+  
+   <tag>
+  	<!-- 标签名字 -->
+    <name>a</name>
+    <!-- 标签运行的类  -->
+    <tag-class>com.project.util.PrvilegeATagSupport</tag-class>
+    <!-- 是围堵标记还是空标记   empty空标记   jsp 是成对标记-->
+    <body-content>jsp</body-content>
+	    <attribute>
+	    	<!--  属性名  格式  -->
+	        <name>href</name>
+	        <!--  属性是否必须 -->
+	        <required>true</required>
+	        <!--  是否支持el表达式 -->
+	        <rtexprvalue>true</rtexprvalue>
+	    </attribute>
+	    <attribute>
+	    	<!--  属性名  格式  -->
+	        <name>target</name>
+	        <!--  属性是否必须 -->
+	        <required>false</required>
+	        <!--  是否支持el表达式 -->
+	        <rtexprvalue>false</rtexprvalue>
+	    </attribute>
+	    <attribute>
+	    	<!--  属性名  格式  -->
+	        <name>clas</name>
+	        <!--  属性是否必须 -->
+	        <required>false</required>
+	        <!--  是否支持el表达式 -->
+	        <rtexprvalue>false</rtexprvalue>
+	    </attribute>
+	    <attribute>
+	    	<!--  属性名  格式  -->
+	        <name>id</name>
+	        <!--  属性是否必须 -->
+	        <required>false</required>
+	        <!--  是否支持el表达式 -->
+	        <rtexprvalue>false</rtexprvalue>
+	    </attribute>
+  </tag>
+</taglib>
+  
+  
